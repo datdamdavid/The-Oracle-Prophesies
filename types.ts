@@ -14,6 +14,14 @@ export interface OracleResult {
   sources: { uri: string; title: string }[];
 }
 
+export interface SavedProphecy {
+  id: string;
+  timestamp: number;
+  topic: string;
+  timeline: string;
+  result: OracleResult;
+}
+
 export type TimelineOption = '6 months' | '12 months' | '24 months' | '5 years' | 'custom';
 
 export interface UserQuery {
